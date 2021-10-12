@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!--
+	Angel by BIO WEB
+	twitter.com @biowebni
+	BIO WEB Attribution 3.0 license (biowebnic.github.io/license)
+-->
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BIO WEB Nicaragua</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+		<!-- HTML5 consulta nuestra compatibilidad -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">BIO WEB Nicaragua</a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Inicio</a></li>
+              <li><a href="#about">Acerca de</a></li>              
+              <li><a href="#portfolio">Integraciones</a></li>
+			  <li><a href="#team">Equipo</a></li>
+			  <li><a href="#info">Info</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>Nunca es tarde para empezar de nuevo</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Prev Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Next Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "2021",
+							  author : "angel"
+                            },
+                            {
+                              bigImage :"images/colors.jpg",
+                              title : "Innovando por vos",
+                              author : "angel"
+                            },
+                            {
+                              bigImage :"images/cohete.jpg",
+                              title : "Exploremos Juntos",
+                              author : "angel"
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>Acerca de <span>BIO WEB Nicaragua</span></h2>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/banner-bg.png)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h4>BIO WEB</h4>
+                  <p>Es un sistema donde puedes realizar o gestionar tus Calificaciones en Línea.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>Nuevas Versiones y/o Actualizaciones</h4>
+                  <p>El equipo de BIO WEB Nicaragua ha trabajado en tiempo récord para crear nuevos diseños.
+                    -Chat Bot.
+                    -Área Técnica.
+                  Adicional el equipo, sigue trabajando para crear el sistema aún más directo.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>Nuestro propósito</h4>
+                  <p>Actualmente la responsabilidad de los CEO es estar al alcance de una herramienta tan importante como la comunicación y el servicio de gestiones a nivel educativo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+	
+	
+	    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="light">
+      <header class="title">
+        <h2>Integraciones</h2>
+        <p>Toca la imágen de la opción que más se adapte a ti.</p>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter="all" class="filter">Integraciones</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+            var portfolio = [
+                    {
+                      category : "integraciones",
+                      image : "images/biobot.png",
+                      title : "Chat Bot-<span>WhatsApp</span>",
+                      link : "https://wa.me/50578079460",
+                      text : "Gestiona tus calificaciones en WhatsApp."
+                    },
+                    {
+                      category : "integraciones",
+                      image : "images/form.png",
+                      title : "Formulario <span>de Suscripción y/o ticket</span>",
+                      link : "https://share.hsforms.com/1vwRuY1BfRcWZf2dqJxJGagc86go",
+                      text : "Gestiona tus calificaciones en WhatsApp."
+                    },
+                    {
+                      category : "integraciones",
+                      image : "images/Servicio.webp",
+                      title : "Soporte <span>Técnico</span>",
+                      link : "https://tawk.to/bioweb.com.ni",
+                      text : "Asesor 24/7."
+                    },
+                    {
+                      category : "integraciones",
+                      image : "images/biowebgo.png",
+                      title : "Solicitar <span>Calificaciones</span>",
+                      link : "https://tawk.to/chat/60ffacbf649e0a0a5cce198d/1fbjbljh6",
+                      text : "Solicitar Calificaciones ahora."
+                    },
+                    
+                ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TEAM -->
+
+    <section id="team" class="light">
+      <header class="title">
+        <h2>Nuestro Equipo <span>BIO WEB Nicaragua</span></h2>
+      </header>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/angelhurtado.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Angel Hurtado</h3>
+              <h5>Fundador & CEO</h5>
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="https://twitter.com/angelhurtadors" class="fa fa-twitter"></a></li>
+                  <li><a href="https://instagram.com/angelhurtadors" class="fa fa-instagram"></a></li>
+                  <li><a href="https://facebook.com/angelhurtadors" class="fa fa-facebook"></a></li>
+                  <li><a href="https://tawk.to/angelhurtadors" class="fa fa-rss"></a></li>
+                </ul> 
+              </div>                
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/emilis.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Emilis Arana</h3>
+              <h5>Expositora & CEO</h5>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="https://twitter.com/insideyourhall" class="fa fa-twitter"></a></li>
+                  <li><a href="https://instagram.com/insideyourhall" class="fa fa-instagram"></a></li>
+                </ul> 
+              </div>                
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/ligdami.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Ligdami Torrez</h3>
+              <h5>Director General</h5>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="https://facebook.com/ligdami.torrez" class="fa fa-facebook"></a></li>
+                </ul> 
+              </div>                
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/jeyling.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Jeyling Gaitán</h3>
+              <h5>Manager</h5>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="https://twitter.com/GaitanJeamileth" class="fa fa-twitter"></a></li>
+                  <li><a href="https://instagram.com/jeyling_gaitan" class="fa fa-instagram"></a></li>
+                  <li><a href="https://facebook.com/jeyling.gaytan" class="fa fa-facebook"></a></li>
+                </ul> 
+              </div>                
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+	
+	    <!-- INFO -->
+
+    <section id="info" class="dark">
+      <header class="title">
+        <h2> Estadística de <span>BIO WEB Nicaragua</span></h2>
+      </header>
+
+      <div class="container experties">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="80%"></span><em>Chat Bot - WhatsApp</em></li>
+                <li><span class="percentage" data-value="95%"></span><em>Soporte Técnico</em></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="60%"></span><em>Consultas a través de E-MAIL</em></li>
+                <li><span class="percentage" data-value="90%"></span><em>satisfacción por parte de Nuestros Usuarios</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>	
+	
+
+    <section class="separator blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+              <div class="counter-icon">
+                <i class="fa fa-group"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="90"></span>
+                <small>Social</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+              <div class="counter-icon">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="2"></span>
+                <small>Áreas Técnicas</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+              <div class="counter-icon">
+                <i class="fa fa-gears"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="12"></span>
+                <small>Nuevas Actualizaciones</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="20"></span>
+                <small>Correos</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER CONTACT -->
+    
+     <section id="contact" class="dark">
+      <header class="title"> 
+        <a href="index.html"> <img src="images/mined.png" alt="logo" /></a>
+        <h2>Contáctanos <span>BIO WEB Nicaragua</span></h2>
+        <p></p>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 animated" data-animate="fadeInLeft">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="social">
+                  </div>
+                </div>
+      <span><i class="fa fa-map-marker fa-lg"></i> Juigalpa Chontales, Nicaragua</span>
+      <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:hello@biowebnic.inbox.ai">E-MAIL</a></span>
+    </address>
+      <span><i class="fa fa-globe fa-lg"></i> <a href="http://tawk.to/bioweb.com.ni">Soporte</a></span>
+         </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2021 BIO WEB Nicaragua. Todos los derechos reservados.
+            <p>Powered by <i class="fa fa-heart"></i> <a href="http://facebook.com/angelhurtadors">Angel Hurtado</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div><!-- /.container-fluid -->
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
